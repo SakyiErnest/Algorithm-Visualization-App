@@ -1,0 +1,26 @@
+ int target = targetNumberInput.isDisabled() ? -1 : Integer.parseInt(targetNumberInput.getText());
+                String result = "";
+                switch (algorithm) {
+                    case "Selection Sort":
+                        BubbleSort.bubbleSort(arr);
+                        result = "Sorted array using Selection Sort: " + Arrays.toString(arr);
+                        break;
+                    // similar changes for other sorting algorithms
+                    case "Linear Search":
+                        int linearSearchResult = LinearSearch.linearSearch(arr, target);
+                        if (linearSearchResult != -1) {
+                            result = "Element found at index " + linearSearchResult;
+                        } else {
+                            result = "Element not found";
+                        }
+                        break;
+                    case "Binary Search":
+                        int binarySearchResult = BinarySearch.binarySearch(arr, target);
+                        if (binarySearchResult != -1) {
+                            result = "Element found at index " + binarySearchResult;
+                        } else {
+                            result = "Element not found";
+                        }
+                        break;
+                }
+                resultLabel.setText(result);
