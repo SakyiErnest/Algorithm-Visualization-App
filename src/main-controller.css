@@ -1,0 +1,58 @@
+/* main-controller.css */
+
+.root {
+    -fx-background-color: #f5f5f5;
+}
+
+.button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+    -fx-cursor: hand; /* Indicate interactivity */
+}
+
+.button:hover {
+    -fx-background-color: #1976D2;
+}
+
+.text-field, .text-area, .combo-box {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333; /* Darker text for better readability */
+}
+
+#title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1565C0;
+}
+
+.result-panel {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 3);
+}
+
+.input-panel-container {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 5;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5,0,0,2);
+}
+
+.disabled {
+    -fx-opacity: 0.5; /* Indicate disabled state visually */
+}
+
+
+/* Pseudocode panel styling - Moved to pseudocode-panel.css for PseudocodePanel class itself */

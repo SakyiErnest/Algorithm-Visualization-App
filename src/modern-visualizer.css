@@ -1,0 +1,315 @@
+/* Root container */
+.root-container {
+    -fx-background-color: #1e1e2e;
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Title */
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cba6f7;
+    -fx-effect: dropshadow(gaussian, rgba(203, 166, 247, 0.4), 10, 0, 0, 0);
+    -fx-padding: 10px;
+}
+
+.top-container {
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #313244;
+}
+
+/* Input Panel */
+.input-panel {
+    -fx-background-color: #313244;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+    -fx-padding: 20px;
+}
+
+.section-header {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #cba6f7;
+    -fx-padding: 0 0 10px 0;
+}
+
+.control-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #cdd6f4;
+}
+
+.field {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #cdd6f4;
+    -fx-border-color: #585b70;
+    -fx-border-radius: 4px;
+    -fx-padding: 8px;
+    -fx-font-size: 13px;
+}
+
+.field:focused {
+    -fx-border-color: #cba6f7;
+    -fx-effect: dropshadow(gaussian, rgba(203, 166, 247, 0.4), 3, 0, 0, 0);
+}
+
+.text-area {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #cdd6f4;
+}
+
+.text-area .content {
+    -fx-background-color: #1e1e2e;
+}
+
+.combo-box {
+    -fx-background-color: #1e1e2e;
+    -fx-mark-color: #cba6f7;
+    -fx-text-fill: #cdd6f4;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #cdd6f4;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #1e1e2e;
+    -fx-border-color: #585b70;
+}
+
+.combo-box .list-view .list-cell:hover {
+    -fx-background-color: #45475a;
+}
+
+.combo-box .list-view .list-cell:filled:selected {
+    -fx-background-color: #585b70;
+}
+
+.search-target:disabled {
+    -fx-opacity: 0.5;
+}
+
+.step-checkbox {
+    -fx-text-fill: #cdd6f4;
+    -fx-font-size: 14px;
+}
+
+.step-checkbox .box {
+    -fx-background-color: #1e1e2e;
+    -fx-border-color: #585b70;
+    -fx-border-radius: 3px;
+}
+
+.step-checkbox:selected .mark {
+    -fx-background-color: #cba6f7;
+}
+
+/* Add styles for animation controls */
+.animation-controls {
+    -fx-background-color: #f8f9fa;
+    -fx-background-radius: 8px;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 8px;
+    -fx-padding: 10px;
+    -fx-spacing: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 4, 0, 0, 1);
+}
+
+.animation-button {
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 4px;
+    -fx-padding: 8px 12px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s;
+}
+
+.animation-button:hover {
+    -fx-background-color: #e9ecef;
+}
+
+.animation-button:pressed {
+    -fx-background-color: #dee2e6;
+}
+
+.animation-button:disabled {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+}
+
+/* Style play button */
+.animation-button .play {
+    -fx-text-fill: #38a169;
+}
+
+/* Style pause button */
+.animation-button .pause {
+    -fx-text-fill: #f59e0b;
+}
+
+/* Style step button */
+.animation-button .step {
+    -fx-text-fill: #3b82f6;
+}
+
+/* Style reset button */
+.animation-button .reset {
+    -fx-text-fill: #ef4444;
+}
+
+/* Status indicator styles */
+.status-dot {
+    -fx-border-color: #d1d5db;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+}
+
+.status-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #4b5563;
+}
+
+/* Slider labels */
+.slider-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #6b7280;
+    -fx-padding: 0 4px;
+}
+
+/* Algorithm Complexity Visualizer Styles */
+.complexity-visualizer {
+    -fx-background-color: #1e1e2e;
+    -fx-padding: 15px;
+}
+
+.complexity-visualizer .chart {
+    -fx-background-color: #313244;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+.complexity-visualizer .axis {
+    -fx-tick-label-fill: #cdd6f4;
+    -fx-tick-label-font-size: 10px;
+}
+
+.complexity-visualizer .axis-label {
+    -fx-text-fill: #cba6f7;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.complexity-visualizer .chart-title {
+    -fx-text-fill: #cba6f7;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.complexity-visualizer .control-panel {
+    -fx-background-color: #313244;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+    -fx-padding: 15px;
+}
+
+.complexity-visualizer .check-box {
+    -fx-text-fill: #cdd6f4;
+}
+
+.complexity-visualizer .check-box .box {
+    -fx-background-color: #1e1e2e;
+    -fx-border-color: #585b70;
+    -fx-border-radius: 3px;
+}
+
+.complexity-visualizer .check-box:selected .mark {
+    -fx-background-color: #cba6f7;
+}
+
+.complexity-visualizer .label {
+    -fx-text-fill: #cdd6f4;
+    -fx-font-size: 13px;
+}
+
+.complexity-visualizer .text-field {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #cdd6f4;
+    -fx-border-color: #585b70;
+    -fx-border-radius: 4px;
+    -fx-padding: 6px;
+}
+
+.complexity-visualizer .button {
+    -fx-background-color: #cba6f7;
+    -fx-text-fill: #1e1e2e;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.complexity-visualizer .button:hover {
+    -fx-background-color: #a288c0;
+}
+
+.complexity-visualizer .combo-box {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #cdd6f4;
+    -fx-border-color: #585b70;
+    -fx-border-radius: 4px;
+}
+
+.complexity-visualizer .combo-box .list-cell {
+    -fx-background-color: #1e1e2e;
+    -fx-text-fill: #cdd6f4;
+}
+
+.complexity-visualizer .titled-pane {
+    -fx-text-fill: #cdd6f4;
+}
+
+.complexity-visualizer .titled-pane>.title {
+    -fx-background-color: #45475a;
+    -fx-border-color: #585b70;
+}
+
+.complexity-visualizer .titled-pane>.content {
+    -fx-background-color: #1e1e2e;
+    -fx-border-color: #585b70;
+}
+
+.complexity-visualizer .table-view {
+    -fx-background-color: #313244;
+    -fx-border-color: #585b70;
+}
+
+.complexity-visualizer .table-view .column-header {
+    -fx-background-color: #45475a;
+    -fx-text-fill: #cdd6f4;
+}
+
+.complexity-visualizer .table-view .table-cell {
+    -fx-text-fill: #cdd6f4;
+    -fx-border-color: transparent;
+}
+
+.complexity-visualizer .table-view .table-row-cell {
+    -fx-background-color: #1e1e2e;
+}
+
+.complexity-visualizer .table-view .table-row-cell:odd {
+    -fx-background-color: #2a2b3c;
+}
+
+.complexity-visualizer .table-view .table-row-cell:hover {
+    -fx-background-color: #45475a;
+}
+
+.complexity-visualizer .progress-bar>.track {
+    -fx-background-color: #1e1e2e;
+}
+
+.complexity-visualizer .progress-bar>.bar {
+    -fx-background-color: #cba6f7;
+}

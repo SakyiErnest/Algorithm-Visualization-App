@@ -26,6 +26,10 @@ public class AlgorithmExecutor {
                 InsertionSort.sort(arr, stepByStep, visualizer, task);
                 result = formatSortResult(originalArray, arr, "Insertion Sort");
                 break;
+            case "Bubble Sort":
+                BubbleSort.sort(arr, stepByStep, visualizer, task);
+                result = formatSortResult(originalArray, arr, "Bubble Sort");
+                break;
             case "Quick Sort":
                 QuickSort.sort(arr, 0, arr.length - 1, stepByStep, visualizer, task);
                 result = formatSortResult(originalArray, arr, "Quick Sort");
@@ -34,9 +38,17 @@ public class AlgorithmExecutor {
                 MergeSort.sort(arr, 0, arr.length - 1, stepByStep, visualizer, task);
                 result = formatSortResult(originalArray, arr, "Merge Sort");
                 break;
+            case "Heap Sort":
+                HeapSort.sort(arr, stepByStep, visualizer, task);
+                result = formatSortResult(originalArray, arr, "Heap Sort");
+                break;
             case "Radix Sort":
                 RadixSort.sort(arr, stepByStep, visualizer, task);
                 result = formatSortResult(originalArray, arr, "Radix Sort");
+                break;
+            case "Counting Sort":
+                CountingSort.sort(arr, stepByStep, visualizer, task);
+                result = formatSortResult(originalArray, arr, "Counting Sort");
                 break;
             case "Linear Search":
                 int searchIndexLS = LinearSearch.search(arr, target, stepByStep, visualizer, task);
@@ -60,9 +72,12 @@ public class AlgorithmExecutor {
         return switch (algorithm) {
             case "Selection Sort" -> "O(n²) - Quadratic time";
             case "Insertion Sort" -> "O(n²) - Quadratic time (O(n) for nearly sorted arrays)";
+            case "Bubble Sort" -> "O(n²) - Quadratic time (O(n) for already sorted arrays)";
             case "Quick Sort" -> "O(n log n) average, O(n²) worst case";
             case "Merge Sort" -> "O(n log n) - Consistent performance";
+            case "Heap Sort" -> "O(n log n) - Consistent performance";
             case "Radix Sort" -> "O(d * n) where d is the number of digits";
+            case "Counting Sort" -> "O(n + k) where k is the range of input values";
             case "Linear Search" -> "O(n) - Linear time";
             case "Binary Search" -> "O(log n) - Logarithmic time";
             default -> "Unknown";
